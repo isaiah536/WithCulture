@@ -15,4 +15,22 @@
     <string name="회원가입">회원가입</string>
     <string name="emailadress">EmailAdress</string>
     <string name="password">password</string>
+    <string name="본인인증">본인인증</string>
+    <string name="name">Name</string>
+    <string name="여">여</string>
+    <string name="남">남</string>
+    <string name="성별">성별</string>
+    <string name="nickname">Nickname</string>
+    <string name="가입하기">가입하기</string>
+    <string name="남성">남성</string>
+    <string name="여성">여성</string>
+    <string name="인증번호전송">인증번호전송</string>
+    <string name="전화번호">전화번호</string>
+    <string name="이름">이름</string>
+    <string name="닉네임">닉네임</string>
+    <string name="비밀번호">비밀번호</string>
+    <string name="이메일주소">이메일주소</string>
+    <string name="중복확인">중복확인</string>
+    <string name="생년월일">생년월일(8자리)</string>
+    <string name="인증번호">인증번호</string>
 </resources>
