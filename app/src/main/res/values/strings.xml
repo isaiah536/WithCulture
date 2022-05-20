@@ -33,4 +33,8 @@
     <string name="중복확인">중복확인</string>
     <string name="생년월일">생년월일(8자리)</string>
     <string name="인증번호">인증번호</string>
+    <string name="tologinpage">toLoginPage</string>
+    <string name="tomain">toMain</string>
+    <string name="towriteaccompany">toWriteAccompany</string>
+    <string name="동행글리스트">동행글리스트</string>
 </resources>
