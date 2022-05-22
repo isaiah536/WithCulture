@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toStartOf="@+id/search"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421"
+        app:srcCompat="@drawable/back"
+        app:tint="#8da1fe"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="32dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47"
+        app:srcCompat="@drawable/magnifying_glass"
+        app:tint="#8da1fe"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.097"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="오늘 XX 연극"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/text"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="56dp"
+        android:text="오늘 XX 연극에서 OOO 배우 보셨어요?"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/line"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <ImageView
+        android:id="@+id/heart"
+        android:layout_width="19dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/chat"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:srcCompat="@drawable/heart_full"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/chat_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="30dp"
+        android:text="03"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/chat"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/chat"
+        android:layout_width="21dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:srcCompat="@drawable/chat_full"
+        app:tint="#8da1fe"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/heart_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="5dp"
+        android:text="02"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/chat"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/heart"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="380dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="556dp"
+        android:background="#A9A9A9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heart"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_text"
+        android:layout_width="410dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="2dp"
+        android:background="00ff0000"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="저번 주에 한 OO 뮤지컬 본 사람?"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/line"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="ㅁㅁㅁ배우"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/title2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <ImageView
+        android:id="@+id/heart2"
+        android:layout_width="19dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/chat"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        app:srcCompat="@drawable/heart_full"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/chat_c2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="30dp"
+        android:text="10"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/chat2"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/chat2"
+        android:layout_width="21dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        app:srcCompat="@drawable/chat_full"
+        app:tint="#8da1fe"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/heart_c2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="5dp"
+        android:text="15"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/chat2"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/heart2"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="380dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="#A9A9A9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heart2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="제목"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/line2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="내용 일부"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/title3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <ImageView
+        android:id="@+id/heart3"
+        android:layout_width="19dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/chat3"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text3"
+        app:srcCompat="@drawable/heart_full"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/chat_c3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="30dp"
+        android:text="00"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/chat3"
+        app:layout_constraintTop_toBottomOf="@+id/text3"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/chat3"
+        android:layout_width="21dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text3"
+        app:srcCompat="@drawable/chat_full"
+        app:tint="#8da1fe"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/heart_c3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="5dp"
+        android:text="00"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/chat3"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/heart3"
+        app:layout_constraintTop_toBottomOf="@+id/text3"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="380dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="#A9A9A9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heart3"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/title4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="제목"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/line3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="내용 일부"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/title4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <ImageView
+        android:id="@+id/heart4"
+        android:layout_width="19dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/chat4"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text4"
+        app:srcCompat="@drawable/heart_full"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/chat_c4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="30dp"
+        android:text="00"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/chat4"
+        app:layout_constraintTop_toBottomOf="@+id/text4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/chat4"
+        android:layout_width="21dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text4"
+        app:srcCompat="@drawable/chat_full"
+        app:tint="#8da1fe"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/heart_c4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="5dp"
+        android:text="00"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/chat4"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/heart4"
+        app:layout_constraintTop_toBottomOf="@+id/text4"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/line4"
+        android:layout_width="380dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="#A9A9A9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heart4"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/title5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="제목"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/line4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="내용 일부"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/title5"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <ImageView
+        android:id="@+id/heart5"
+        android:layout_width="19dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/chat5"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text5"
+        app:srcCompat="@drawable/heart_full"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/chat_c5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="30dp"
+        android:text="00"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/chat5"
+        app:layout_constraintTop_toBottomOf="@+id/text5"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/chat5"
+        android:layout_width="21dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text5"
+        app:srcCompat="@drawable/chat_full"
+        app:tint="#8da1fe"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/heart_c5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="5dp"
+        android:text="00"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/chat5"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/heart5"
+        app:layout_constraintTop_toBottomOf="@+id/text5"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/line5"
+        android:layout_width="380dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="#A9A9A9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heart5"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/title6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="제목"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/line5"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="내용 일부"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/title6"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <ImageView
+        android:id="@+id/heart6"
+        android:layout_width="19dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/chat"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text6"
+        app:srcCompat="@drawable/heart_full"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/chat_c6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="30dp"
+        android:text="00"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/chat6"
+        app:layout_constraintTop_toBottomOf="@+id/text6"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/chat6"
+        android:layout_width="21dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text6"
+        app:srcCompat="@drawable/chat_full"
+        app:tint="#8da1fe"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/heart_c6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="5dp"
+        android:text="00"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/chat6"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/heart6"
+        app:layout_constraintTop_toBottomOf="@+id/text6"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/line6"
+        android:layout_width="380dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="#A9A9A9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heart6"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
