@@ -51,4 +51,6 @@
     <string name="동행구하기">동행 구하기</string>
     <string name="제목">제목</string>
     <string name="내용을입력하세요">내용을 입력하세요</string>
+    <string name="모집중">모집중</string>
+    <string name="textview">TextView</string>
 </resources>
