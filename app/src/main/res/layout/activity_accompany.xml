@@ -107,7 +107,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/write1_writing"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:src="@drawable/like" />
 
     <TextView
         android:id="@+id/write2_title"
@@ -154,7 +154,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/write2_writing"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:src="@drawable/like" />
 
     <View
         android:id="@+id/divider3"
@@ -220,7 +220,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/write3_writing"
-        tools:srcCompat="@tools:sample/avatars"
+        android:src="@drawable/like"
         android:contentDescription="@string/heart" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -44,10 +44,11 @@
     <string name="dalee2008">dalee2008</string>
     <string name="oo00">오늘 oo전시회 같이 가실분?</string>
     <string name="heart">heart</string>
-    <string name="heart">heart</string>
     <string name="xx">XX콘서트 막콘 동행 구해요!!</string>
     <string name="xx_n">xx콘 막콘 동행 구해요 콘서트 하기 전에 돌아다니면서 \n같이 나눔 받으실 분이면 더 좋을 것 같아요!!</string>
     <string name="isaiah_yeohs">isaiah_yeohs</string>
-    <string name="heart">heart</string>
     <string name="동행신청하기">동행 신청하기</string>
+    <string name="동행구하기">동행 구하기</string>
+    <string name="제목">제목</string>
+    <string name="내용을입력하세요">내용을 입력하세요</string>
 </resources>
