@@ -6,6 +6,278 @@
     android:layout_height="match_parent">
 
 
+    <Button
+        android:id="@+id/accept"
+        android:layout_width="423dp"
+        android:layout_height="66dp"
+        android:background="00ff0000"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/line1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:ignore="MissingConstraints" />
 
+    <View
+        android:id="@+id/line3"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:background="#A9A9A9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/name3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="318dp"
+        android:text="mmm"
+        android:textColor="	#242425"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/profile1"
+        app:layout_constraintTop_toBottomOf="@+id/line1"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/profile3"
+        android:layout_width="42dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line1"
+        app:srcCompat="@drawable/profile"
+        app:tint="#2B2B2B"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/chat3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="204dp"
+        android:text="아 맞아요!"
+        android:textColor="#727273"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/profile1"
+        app:layout_constraintTop_toBottomOf="@+id/name2"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/profile2"
+        android:layout_width="42dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line1"
+        app:srcCompat="@drawable/profile"
+        app:tint="#2B2B2B"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="318dp"
+        android:text="eeggg"
+        android:textColor="	#242425"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/profile1"
+        app:layout_constraintTop_toBottomOf="@+id/line1"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/alarm2"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/chat2"
+        app:layout_constraintTop_toBottomOf="@+id/line1"
+        app:srcCompat="@drawable/circle"
+        app:tint="#8da1fe"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/plus2"
+        android:layout_width="17dp"
+        android:layout_height="21dp"
+        android:text="+2"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/alarm2"
+        app:layout_constraintEnd_toEndOf="@+id/alarm2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/alarm2"
+        app:layout_constraintTop_toTopOf="@+id/alarm2"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/chat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="204dp"
+        android:text="오늘 너무 재밌었어요!"
+        android:textColor="#242425"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/profile1"
+        app:layout_constraintTop_toBottomOf="@+id/name2"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="5dp"
+        android:background="#A9A9A9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/chat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="204dp"
+        android:text="동행 신청이 들어왔습니다"
+        android:textColor="#242425"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profile1"
+        app:layout_constraintTop_toBottomOf="@+id/name1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="318dp"
+        android:text="abcd"
+        android:textColor="	#242425"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profile1"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/profile1"
+        android:layout_width="42dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:srcCompat="@drawable/profile"
+        app:tint="#2B2B2B"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/back"
+        app:tint="#8da1fe"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#C4333333"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.097"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/etc"
+        android:layout_width="29dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="313dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/three_dots"
+        app:tint="#8da1fe"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/alarm1"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.645"
+        app:layout_constraintStart_toEndOf="@+id/chat1"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:srcCompat="@drawable/circle"
+        app:tint="#8da1fe"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/plus"
+        android:layout_width="17dp"
+        android:layout_height="23dp"
+        android:text="+1"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/alarm1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/alarm1"
+        app:layout_constraintTop_toTopOf="@+id/alarm1"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
