@@ -10,7 +10,7 @@
         android:id="@+id/accept"
         android:layout_width="423dp"
         android:layout_height="66dp"
-        android:background="00ff0000"
+        android:background="@android:color/transparent"
         android:text=""
         app:layout_constraintBottom_toBottomOf="@+id/line1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -232,9 +232,10 @@
         android:background="#C4333333"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.097"
+        app:layout_constraintVertical_bias="0.157"
         tools:ignore="MissingConstraints" />
 
     <ImageView
