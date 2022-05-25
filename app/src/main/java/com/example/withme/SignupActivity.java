@@ -49,7 +49,7 @@ public class SignupActivity extends AppCompatActivity {
         Birth = findViewById(R.id.editTextNumber);
         Phone = findViewById(R.id.editTextPhone);
         Certificate = findViewById(R.id.certificate_number);
-
+        //test
         userInfo = new UserInfo();
         info info = new info();
 
