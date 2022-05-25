@@ -53,4 +53,10 @@
     <string name="내용을입력하세요">내용을 입력하세요</string>
     <string name="모집중">모집중</string>
     <string name="textview">TextView</string>
+    <string name="oo000">저번 주에 한 OO 뮤지컬 본 사람?</string>
+    <string name="태그">태그</string>
+    <string name="_19">19시</string>
+    <string name="xx_xx_xx">xx월 xx일 xx시</string>
+    <string name="_19_oo_n">오늘 19시에 하는 OO전시회 가는데 같이 가서 구경 하실 분 있니요? \n신청해주세요~!</string>
+    <string name="back">back</string>
 </resources>

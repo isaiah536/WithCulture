@@ -6,6 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".Accompany_new_write">
 
+    <ImageView
+        android:id="@+id/back3"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.002"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back"
+        app:tint="#8da1fe"
+        tools:ignore="MissingConstraints,ImageContrastCheck" />
+
     <View
         android:id="@+id/divider5"
         android:layout_width="409dp"
@@ -19,8 +34,8 @@
 
     <ImageButton
         android:id="@+id/writeAccompany2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="10dp"
         android:adjustViewBounds="true"
@@ -33,23 +48,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/edit" />
-
-    <ImageButton
-        android:id="@+id/backAccompany2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:adjustViewBounds="true"
-        android:autofillHints=""
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/tomain"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.002"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back" />
 
     <TextView
         android:id="@+id/write_title"
@@ -71,6 +69,7 @@
         android:ems="10"
         android:gravity="start|top"
         android:hint="@string/제목"
+        android:textColorHint="#757575"
         android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -86,7 +85,24 @@
         android:gravity="start|top"
         android:hint="@string/내용을입력하세요"
         android:inputType="textMultiLine"
+        android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="320dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="236dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/태그"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
