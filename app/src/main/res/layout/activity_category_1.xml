@@ -243,7 +243,7 @@
         android:layout_marginBottom="26dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/right_arrow" />
+        app:srcCompat="@drawable/blue_next" />
 
     <TextView
         android:id="@+id/textView13"
