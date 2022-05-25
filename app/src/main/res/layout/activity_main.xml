@@ -8,9 +8,9 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/툴바"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="56dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -59,21 +59,21 @@
         app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:srcCompat="@drawable/main_rectangle" />
+        app:srcCompat="@drawable/default_box" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/커뮤박스"
         android:layout_width="374dp"
         android:layout_height="180dp"
         android:layout_marginTop="7dp"
         android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintBottom_toTopOf="@+id/툴바"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/main_rectangle" />
+        app:srcCompat="@drawable/default_box" />
 
     <TextView
         android:id="@+id/textView7"
@@ -84,7 +84,7 @@
         android:textColor="#5e5e5e"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintBottom_toTopOf="@+id/툴바"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
@@ -118,11 +118,55 @@
         android:textColor="#8da1fe"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintBottom_toTopOf="@+id/커뮤박스"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.93"
         app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/동행박스"
         app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/홈아이콘"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/homeicon" />
+
+    <ImageView
+        android:id="@+id/카테아이콘"
+        android:alpha="0.3"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/홈아이콘"
+        app:srcCompat="@drawable/category" />
+
+    <ImageView
+        android:id="@+id/챗아이콘"
+        android:alpha="0.3"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/마이아이콘"
+        app:srcCompat="@drawable/chat_circle" />
+
+    <ImageView
+        android:id="@+id/마이아이콘"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:alpha="0.3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/profile_icon" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
