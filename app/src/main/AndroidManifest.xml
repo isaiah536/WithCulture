@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Withme">
         <activity
+            android:name=".Accompany_new_write"
+            android:exported="false" />
+        <activity
+            android:name=".Accompany_write3"
+            android:exported="false" />
+        <activity
+            android:name=".Accompany_write2"
+            android:exported="false" />
+        <activity
+            android:name=".Accompany_write_preset"
+            android:exported="false" />
+        <activity
+            android:name=".Accompany_write1"
+            android:exported="false" />
+        <activity
             android:name=".Accompany"
             android:exported="false" />
         <activity
