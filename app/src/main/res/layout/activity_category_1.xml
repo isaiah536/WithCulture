@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/툴바"
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -16,7 +16,7 @@
         app:srcCompat="@drawable/bottom_bar_rectangle" />
 
     <ImageView
-        android:id="@+id/홈아이콘"
+        android:id="@+id/homeicon"
         android:alpha="0.3"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -27,28 +27,28 @@
         app:srcCompat="@drawable/homeicon" />
 
     <ImageView
-        android:id="@+id/카테아이콘"
+        android:id="@+id/cateicon"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginStart="60dp"
         android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/홈아이콘"
+        app:layout_constraintStart_toEndOf="@+id/homeicon"
         app:srcCompat="@drawable/category" />
 
     <ImageView
-        android:id="@+id/챗아이콘"
+        android:id="@+id/chaticon"
         android:alpha="0.3"
         android:layout_width="28dp"
         android:layout_height="28dp"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/마이아이콘"
+        app:layout_constraintEnd_toStartOf="@+id/myicon"
         app:srcCompat="@drawable/chat_circle" />
 
     <ImageView
-        android:id="@+id/마이아이콘"
+        android:id="@+id/myicon"
         android:alpha="0.3"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -72,7 +72,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/검색"
+        android:id="@+id/search"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginEnd="20dp"
@@ -166,7 +166,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
     <ImageView
-        android:id="@+id/명화"
+        android:id="@+id/pic"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginTop="12dp"
@@ -176,7 +176,7 @@
         app:srcCompat="@drawable/classic" />
 
     <ImageView
-        android:id="@+id/조명"
+        android:id="@+id/light"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="32dp"
@@ -186,7 +186,7 @@
         app:srcCompat="@drawable/concert" />
 
     <ImageView
-        android:id="@+id/아트"
+        android:id="@+id/art"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginTop="12dp"
@@ -196,7 +196,7 @@
         app:srcCompat="@drawable/magic" />
 
     <ImageView
-        android:id="@+id/유물"
+        android:id="@+id/fort"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="32dp"
@@ -206,7 +206,7 @@
         app:srcCompat="@drawable/jazz" />
 
     <ImageView
-        android:id="@+id/공간"
+        android:id="@+id/place"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginEnd="32dp"
@@ -216,7 +216,7 @@
         app:srcCompat="@drawable/musical" />
 
     <ImageView
-        android:id="@+id/어린이"
+        android:id="@+id/child"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="36dp"
@@ -226,7 +226,7 @@
         app:srcCompat="@drawable/opera" />
 
     <ImageView
-        android:id="@+id/사진"
+        android:id="@+id/picture"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="36dp"
@@ -236,7 +236,7 @@
         app:srcCompat="@drawable/theatre" />
 
     <ImageView
-        android:id="@+id/더보기"
+        android:id="@+id/more"
         android:layout_width="34dp"
         android:layout_height="34dp"
         android:layout_marginEnd="36dp"
@@ -255,7 +255,7 @@
         android:textColor="#333333"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/사진" />
+        app:layout_constraintTop_toBottomOf="@+id/picture" />
 
     <TextView
         android:id="@+id/textView14"
@@ -267,7 +267,7 @@
         android:textColor="#333333"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/어린이" />
+        app:layout_constraintTop_toBottomOf="@+id/child" />
 
     <TextView
         android:id="@+id/textView15"
@@ -279,7 +279,7 @@
         android:textColor="#333333"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/명화" />
+        app:layout_constraintTop_toBottomOf="@+id/pic" />
 
     <TextView
         android:id="@+id/textView16"
@@ -291,7 +291,7 @@
         android:textColor="#333333"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/공간" />
+        app:layout_constraintTop_toBottomOf="@+id/place" />
 
     <TextView
         android:id="@+id/textView17"
@@ -303,7 +303,7 @@
         android:textColor="#333333"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/조명" />
+        app:layout_constraintTop_toBottomOf="@+id/light" />
 
     <TextView
         android:id="@+id/textView18"
@@ -315,7 +315,7 @@
         android:textColor="#333333"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/유물" />
+        app:layout_constraintTop_toBottomOf="@+id/fort" />
 
     <TextView
         android:id="@+id/textView19"
@@ -328,7 +328,7 @@
         android:textIsSelectable="false"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/아트" />
+        app:layout_constraintTop_toBottomOf="@+id/art" />
 
     <TextView
         android:id="@+id/textView20"
@@ -340,7 +340,7 @@
         android:textColor="#333333"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/더보기" />
+        app:layout_constraintTop_toBottomOf="@+id/more" />
 
     <ImageView
         android:id="@+id/imageView22"
@@ -389,39 +389,39 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/아르데코"
+        android:id="@+id/ardeco"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="14dp"
         android:layout_marginBottom="12dp"
         android:background="@drawable/paint_background"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/툴바"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/artdeco" />
 
     <ImageView
-        android:id="@+id/칸딘스키"
+        android:id="@+id/kandin"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="18dp"
         android:layout_marginBottom="12dp"
         android:background="@drawable/paint_background"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/툴바"
-        app:layout_constraintStart_toEndOf="@+id/아르데코"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@+id/ardeco"
         app:srcCompat="@drawable/k" />
 
     <ImageView
-        android:id="@+id/마그리트"
+        android:id="@+id/magrit"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="18dp"
         android:layout_marginBottom="12dp"
         android:background="@drawable/paint_background"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/툴바"
-        app:layout_constraintStart_toEndOf="@+id/칸딘스키"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@+id/ardeco"
         app:srcCompat="@drawable/magritte" />
 
     <ImageView
@@ -432,8 +432,8 @@
         android:layout_marginBottom="12dp"
         android:background="@drawable/paint_background"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/툴바"
-        app:layout_constraintStart_toEndOf="@+id/마그리트"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@+id/magrit"
         app:srcCompat="@drawable/rothko" />
 
     <ImageView
@@ -474,7 +474,7 @@
         android:layout_width="match_parent"
         android:layout_height="90dp"
         android:layout_marginBottom="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/툴바"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/faint_gray_box" />

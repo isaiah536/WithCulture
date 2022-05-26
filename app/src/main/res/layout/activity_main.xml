@@ -113,7 +113,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="▶ 전체보기"
-        android:textColor="#8da1fe"
+        android:textColor="#448AFF"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageView8"

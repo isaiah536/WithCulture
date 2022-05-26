@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/툴바3"
+        android:id="@+id/toolbar3"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -16,7 +16,7 @@
         app:srcCompat="@drawable/bottom_bar_rectangle" />
 
     <ImageView
-        android:id="@+id/홈아이콘3"
+        android:id="@+id/homeicon3"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="48dp"
@@ -27,28 +27,28 @@
         app:srcCompat="@drawable/homeicon" />
 
     <ImageView
-        android:id="@+id/카테아이콘3"
+        android:id="@+id/cateicon3"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginStart="60dp"
         android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/홈아이콘3"
+        app:layout_constraintStart_toEndOf="@+id/homeicon3"
         app:srcCompat="@drawable/category" />
 
     <ImageView
-        android:id="@+id/챗아이콘3"
+        android:id="@+id/chaticon3"
         android:layout_width="28dp"
         android:layout_height="28dp"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="12dp"
         android:alpha="0.3"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/마이아이콘3"
+        app:layout_constraintEnd_toStartOf="@+id/myicon3"
         app:srcCompat="@drawable/chat_circle" />
 
     <ImageView
-        android:id="@+id/마이아이콘3"
+        android:id="@+id/myicon3"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginEnd="50dp"
@@ -64,7 +64,7 @@
         android:layout_height="500dp"
         android:layout_marginBottom="16dp"
         android:background="#E9E9E9"
-        app:layout_constraintBottom_toTopOf="@+id/툴바3"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"

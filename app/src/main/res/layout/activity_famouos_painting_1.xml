@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/툴바2"
+        android:id="@+id/toolbar2"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -15,7 +15,7 @@
         app:srcCompat="@drawable/bottom_bar_rectangle" />
 
     <ImageView
-        android:id="@+id/홈아이콘2"
+        android:id="@+id/homeicon2"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="48dp"
@@ -26,28 +26,28 @@
         app:srcCompat="@drawable/homeicon" />
 
     <ImageView
-        android:id="@+id/카테아이콘2"
+        android:id="@+id/cateicon2"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginStart="60dp"
         android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/홈아이콘2"
+        app:layout_constraintStart_toEndOf="@+id/homeicon2"
         app:srcCompat="@drawable/category" />
 
     <ImageView
-        android:id="@+id/챗아이콘2"
+        android:id="@+id/chaticon2"
         android:layout_width="28dp"
         android:layout_height="28dp"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="12dp"
         android:alpha="0.3"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/마이아이콘2"
+        app:layout_constraintEnd_toStartOf="@+id/myicon2"
         app:srcCompat="@drawable/chat_circle" />
 
     <ImageView
-        android:id="@+id/마이아이콘2"
+        android:id="@+id/myicon2"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginEnd="50dp"
@@ -71,7 +71,7 @@
         android:id="@+id/imageView26"
         android:layout_width="match_parent"
         android:layout_height="550dp"
-        app:layout_constraintBottom_toTopOf="@+id/툴바2"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar2"
         app:srcCompat="@drawable/corner_rounded_rectangle"
         tools:layout_editor_absoluteX="0dp" />
 
