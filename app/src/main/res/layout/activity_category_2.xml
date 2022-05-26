@@ -16,7 +16,7 @@
         app:srcCompat="@drawable/bottom_bar_rectangle" />
 
     <ImageView
-        android:id="@+id/homeicon"
+        android:id="@+id/home_icon"
         android:alpha="0.3"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -27,28 +27,28 @@
         app:srcCompat="@drawable/homeicon" />
 
     <ImageView
-        android:id="@+id/cateicon"
+        android:id="@+id/category_icon"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginStart="60dp"
         android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/homeicon"
+        app:layout_constraintStart_toEndOf="@+id/home_icon"
         app:srcCompat="@drawable/category" />
 
     <ImageView
-        android:id="@+id/chaticon"
+        android:id="@+id/chat_icon"
         android:alpha="0.3"
         android:layout_width="28dp"
         android:layout_height="28dp"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/myicon"
+        app:layout_constraintEnd_toStartOf="@+id/my_icon"
         app:srcCompat="@drawable/chat_circle" />
 
     <ImageView
-        android:id="@+id/myicon"
+        android:id="@+id/my_icon"
         android:alpha="0.3"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -166,7 +166,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
     <ImageView
-        android:id="@+id/pic"
+        android:id="@+id/box_2"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginTop="12dp"
@@ -176,7 +176,7 @@
         app:srcCompat="@drawable/famous" />
 
     <ImageView
-        android:id="@+id/light"
+        android:id="@+id/box_3"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="32dp"
@@ -186,7 +186,7 @@
         app:srcCompat="@drawable/light" />
 
     <ImageView
-        android:id="@+id/art"
+        android:id="@+id/box_4"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginTop="12dp"
@@ -196,7 +196,7 @@
         app:srcCompat="@drawable/art" />
 
     <ImageView
-        android:id="@+id/fort"
+        android:id="@+id/box_7"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="32dp"
@@ -206,7 +206,7 @@
         app:srcCompat="@drawable/antiquity" />
 
     <ImageView
-        android:id="@+id/place"
+        android:id="@+id/box_6"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginEnd="32dp"
@@ -216,7 +216,7 @@
         app:srcCompat="@drawable/space" />
 
     <ImageView
-        android:id="@+id/child"
+        android:id="@+id/box_5"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="37dp"
@@ -226,7 +226,7 @@
         app:srcCompat="@drawable/kid" />
 
     <ImageView
-        android:id="@+id/picture"
+        android:id="@+id/box_1"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="37dp"
@@ -245,7 +245,7 @@
         android:textColor="#333333"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/picture" />
+        app:layout_constraintTop_toBottomOf="@+id/box_1" />
 
     <TextView
         android:id="@+id/textView14"
@@ -257,7 +257,7 @@
         android:textColor="#333333"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/child" />
+        app:layout_constraintTop_toBottomOf="@+id/box_5" />
 
     <TextView
         android:id="@+id/textView15"
@@ -269,7 +269,7 @@
         android:textColor="#333333"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/pic" />
+        app:layout_constraintTop_toBottomOf="@+id/box_2" />
 
     <TextView
         android:id="@+id/textView16"
@@ -281,7 +281,7 @@
         android:textColor="#333333"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/place" />
+        app:layout_constraintTop_toBottomOf="@+id/box_6" />
 
     <TextView
         android:id="@+id/textView17"
@@ -293,7 +293,7 @@
         android:textColor="#333333"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/light" />
+        app:layout_constraintTop_toBottomOf="@+id/box_3" />
 
     <TextView
         android:id="@+id/textView18"
@@ -305,7 +305,7 @@
         android:textColor="#333333"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/fort" />
+        app:layout_constraintTop_toBottomOf="@+id/box_7" />
 
     <TextView
         android:id="@+id/textView19"
@@ -318,7 +318,7 @@
         android:textIsSelectable="false"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/art" />
+        app:layout_constraintTop_toBottomOf="@+id/box_4" />
 
     <TextView
         android:id="@+id/textView20"
@@ -330,7 +330,7 @@
         android:textColor="#333333"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/more" />
+        app:layout_constraintTop_toBottomOf="@+id/detail" />
 
     <ImageView
         android:id="@+id/imageView22"
@@ -389,7 +389,7 @@
         app:srcCompat="@drawable/faint_gray_box" />
 
     <ImageView
-        android:id="@+id/ardeco"
+        android:id="@+id/artdeco"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="14dp"
@@ -401,7 +401,7 @@
         app:srcCompat="@drawable/artdeco" />
 
     <ImageView
-        android:id="@+id/kandin"
+        android:id="@+id/kd"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="18dp"
@@ -409,11 +409,11 @@
         android:background="@drawable/paint_background"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toTopOf="@+id/toolbar"
-        app:layout_constraintStart_toEndOf="@+id/ardeco"
+        app:layout_constraintStart_toEndOf="@+id/artdeco"
         app:srcCompat="@drawable/k" />
 
     <ImageView
-        android:id="@+id/magrit"
+        android:id="@+id/mg"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="18dp"
@@ -421,7 +421,7 @@
         android:background="@drawable/paint_background"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toTopOf="@+id/toolbar"
-        app:layout_constraintStart_toEndOf="@+id/kandin"
+        app:layout_constraintStart_toEndOf="@+id/kd"
         app:srcCompat="@drawable/magritte" />
 
     <ImageView
@@ -433,7 +433,7 @@
         android:background="@drawable/paint_background"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toTopOf="@+id/toolbar"
-        app:layout_constraintStart_toEndOf="@+id/magrit"
+        app:layout_constraintStart_toEndOf="@+id/mg"
         app:srcCompat="@drawable/rothko" />
 
     <ImageView
@@ -470,7 +470,7 @@
         app:srcCompat="@drawable/thin_back" />
 
     <android.widget.Button
-        android:id="@+id/more"
+        android:id="@+id/detail"
         android:layout_width="34dp"
         android:layout_height="34dp"
         android:layout_marginEnd="36dp"
