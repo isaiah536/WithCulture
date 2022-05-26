@@ -393,4 +393,8 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_end="56dp" />
 
+    <include layout="@layout/toolbar_source">
+
+    </include>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
