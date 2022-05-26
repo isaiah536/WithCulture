@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
                 String PasswordInfo = Password.getText().toString();
 
                 if(!(EmailInfo.equals("")||PasswordInfo.equals(""))){
-                    if(userInfo.login("1","0")){
+                    if(userInfo.login(EmailInfo,PasswordInfo)){
                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(intent);
                     }else{
