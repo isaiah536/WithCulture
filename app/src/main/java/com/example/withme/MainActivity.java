@@ -26,10 +26,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        TextView allCommunity = findViewById(R.id.textView10);
-        allCommunity.setOnClickListener(new View.OnClickListener(){
+        TextView allCommunity1 = findViewById(R.id.textView10);
+        allCommunity1.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                Intent intent = new Intent(MainActivity.this,CommunityActivity.class);
+                Intent intent = new Intent(MainActivity.this,CommunityListActivity.class);
                 startActivity(intent);
             }
         });
