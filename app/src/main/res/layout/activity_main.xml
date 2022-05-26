@@ -7,15 +7,6 @@
     android:background="#f9f9f9"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/bottom_bar_rectangle" />
-
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
@@ -42,14 +33,14 @@
         android:textColor="#5E5E5E"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintBottom_toTopOf="@+id/accompany_box"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/accompany_box"
         android:layout_width="374dp"
         android:layout_height="283dp"
         android:layout_marginTop="12dp"
@@ -57,37 +48,32 @@
         app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:srcCompat="@drawable/main_rectangle" />
+        app:srcCompat="@drawable/default_box" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/community_box"
         android:layout_width="374dp"
-        android:layout_height="177dp"
+        android:layout_height="180dp"
         android:layout_marginTop="7dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/main_rectangle" />
+        app:srcCompat="@drawable/default_box" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="200dp"
         android:text="인기글"
         android:textColor="#5e5e5e"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/accompany_box" />
 
     <TextView
         android:id="@+id/textView8"
@@ -99,7 +85,7 @@
         android:textColor="#8da1fe"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintBottom_toTopOf="@+id/accompany_box"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.878"
         app:layout_constraintStart_toEndOf="@+id/textView6"
@@ -117,11 +103,12 @@
         android:textColor="#8da1fe"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintBottom_toTopOf="@+id/community_box"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.93"
         app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/accompany_box"
         app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
