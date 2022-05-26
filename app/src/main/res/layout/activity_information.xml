@@ -256,8 +256,8 @@
 
     <ImageView
         android:id="@+id/imageView55"
-        android:layout_width="340dp"
-        android:layout_height="124dp"
+        android:layout_width="341dp"
+        android:layout_height="121dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView53"
         app:layout_constraintEnd_toEndOf="@+id/imageView53"
         app:layout_constraintStart_toStartOf="@+id/guideline10"
@@ -269,5 +269,70 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="109dp" />
+
+    <ImageView
+        android:id="@+id/imageView57"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView55"
+        app:layout_constraintTop_toTopOf="@+id/imageView55"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="7dp"
+        android:text="벼랑위의 포뇨"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView57"
+        app:layout_constraintStart_toEndOf="@+id/imageView57" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:text="★ 5.0"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView66"
+        app:layout_constraintStart_toEndOf="@+id/textView66" />
+
+    <ImageView
+        android:id="@+id/imageView58"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView67"
+        app:layout_constraintStart_toEndOf="@+id/textView67"
+        app:srcCompat="@drawable/thumb" />
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="243"
+        android:textColor="#213388"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView58"
+        app:layout_constraintStart_toEndOf="@+id/imageView58" />
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="완벽한 전시회, 무료라는 것이 믿기지 않는다. 화려하고\n따스한 색감과 부드러운 곡선의 조화가 주는 아름다움은\n숨이 막힐 정도이다."
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView57"
+        app:layout_constraintTop_toBottomOf="@+id/imageView57" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
