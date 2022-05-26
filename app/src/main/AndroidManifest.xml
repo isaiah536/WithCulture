@@ -10,23 +10,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Withme">
         <activity
+            android:name=".Information"
+            android:exported="false" />
+        <activity
             android:name=".ChatActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ChatListActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Category_1"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Category_2"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Detail_classify"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Famous_painting_1"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".CommunityListActivity"
             android:exported="false" />

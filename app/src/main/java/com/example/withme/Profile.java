@@ -52,20 +52,5 @@ SignupActivity signupActivity;
         toolbar_profile.setColorFilter(Color.parseColor("#00404040"));
 
     }
-    public void setProfile(String s){
-        TextView NickNameSet = findViewById(R.id.Profile_NickName);
-        TextView NameSet = findViewById(R.id.Profile_Name_set);
-        TextView BirthSet = findViewById(R.id.Profile_Age_set);
-        TextView GenderSet = findViewById(R.id.Profile_Gender_set);
-        TextView EmailSet = findViewById(R.id.Profile_Email_set);
-        TextView PasswordSet = findViewById(R.id.Profile_Password_set);
-        String [] temp = s.split("=");
-        NickNameSet.setText(temp[2]);
-        NameSet.setText(temp[3]);
-        BirthSet.setText(temp[4]);
-        GenderSet.setText(temp[6]);
-        EmailSet.setText(temp[0]);
-        PasswordSet.setText(temp[1]);
-    }
 
 }

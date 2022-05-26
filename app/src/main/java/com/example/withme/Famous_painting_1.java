@@ -60,6 +60,31 @@ public class Famous_painting_1 extends AppCompatActivity {
             }
         });
 
+        ImageView gotoInfo = findViewById(R.id.imageView35);
+        gotoInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Famous_painting_1.this,Information.class);
+                startActivity(intent);
+            }
+        });
+        ImageView gotoInfo1 = findViewById(R.id.imageView39);
+        gotoInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Famous_painting_1.this,Information.class);
+                startActivity(intent);
+            }
+        });
+        ImageView gotoInfo2 = findViewById(R.id.imageView43);
+        gotoInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Famous_painting_1.this,Information.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 }

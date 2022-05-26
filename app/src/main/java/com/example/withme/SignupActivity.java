@@ -132,7 +132,6 @@ public class SignupActivity extends AppCompatActivity {
                     String tmp = Email.getText().toString()+"="+Password.getText().toString()+"="+Nickname.getText().toString()
                             +"="+Name.getText().toString()+"="+Birth.getText().toString()+"="+Phone.getText().toString()+"="+Isgender;
                     userInfo.addAll(tmp);
-                    profile.setProfile(tmp);
                 }else{
                     Toast toast = Toast.makeText(getApplicationContext(),"모두 입력해 주세요.",Toast.LENGTH_SHORT);
                     toast.show();
