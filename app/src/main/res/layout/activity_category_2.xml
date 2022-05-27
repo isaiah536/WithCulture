@@ -441,5 +441,4 @@
     <include layout="@layout/toolbar_source">
 
     </include>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

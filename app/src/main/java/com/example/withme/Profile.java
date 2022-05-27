@@ -7,13 +7,18 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.example.withme.data.UserInfo;
 
 public class Profile extends AppCompatActivity {
-
+UserInfo userInfo;
+SignupActivity signupActivity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+        userInfo = new UserInfo();
 
         ImageView toolbar_home = findViewById(R.id.bar_home);
         toolbar_home.setOnClickListener(new View.OnClickListener() {
@@ -43,9 +48,9 @@ public class Profile extends AppCompatActivity {
             }
         });
 
-
         ImageView toolbar_profile = findViewById(R.id.bar_profile);
         toolbar_profile.setColorFilter(Color.parseColor("#00404040"));
 
     }
+
 }

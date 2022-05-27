@@ -374,5 +374,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="659dp" />
+    <include layout="@layout/toolbar_source">
+
+    </include>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

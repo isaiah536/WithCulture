@@ -17,7 +17,6 @@ public class UserInfo {
     public void addAll(String s){infoall.add(s);}
     public String getEmail(int x){return infoemail.get(x);}
     public String getAll(int x) {return infoall.get(x);}
-
     public boolean empty(){
         return infoemail.isEmpty();
     }
