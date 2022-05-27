@@ -6,15 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".Accompany_new_write">
 
+    <ImageButton
+        android:id="@+id/writeAccompany2"
+        android:layout_width="34dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="17dp"
+        android:adjustViewBounds="true"
+        android:autofillHints=""
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/towriteaccompany"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/divider5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/write_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/edit"
+        app:tint="#8da1fe"
+        tools:ignore="MissingConstraints" />
+
     <ImageView
         android:id="@+id/back3"
         android:layout_width="33dp"
         android:layout_height="33dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="17dp"
         android:contentDescription="@string/back"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.002"
+        app:layout_constraintBottom_toTopOf="@+id/divider5"
+        app:layout_constraintEnd_toStartOf="@+id/write_title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back"
@@ -31,23 +54,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/writeAccompany2"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="10dp"
-        android:adjustViewBounds="true"
-        android:autofillHints=""
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/towriteaccompany"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/edit" />
 
     <TextView
         android:id="@+id/write_title"
