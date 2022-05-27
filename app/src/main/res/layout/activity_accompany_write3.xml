@@ -5,7 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Accompany_write3">
-    <include layout="@layout/activity_accompany_write_preset">
+
+    <include
+        layout="@layout/activity_accompany_write_preset"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
     </include>
 
