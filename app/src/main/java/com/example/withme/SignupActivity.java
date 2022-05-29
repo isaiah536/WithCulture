@@ -36,7 +36,8 @@ public class SignupActivity extends AppCompatActivity {
     boolean certificated = false;//
     boolean emailconfirm = false;//
     boolean passwordB = false;//
-
+    Profile profile;
+    String Isgender;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +50,7 @@ public class SignupActivity extends AppCompatActivity {
         Birth = findViewById(R.id.editTextNumber);
         Phone = findViewById(R.id.editTextPhone);
         Certificate = findViewById(R.id.certificate_number);
-
+        //test
         userInfo = new UserInfo();
         info info = new info();
 
@@ -68,6 +69,7 @@ public class SignupActivity extends AppCompatActivity {
                     male.setChecked(true);
                 }
                 gender = true;
+                Isgender="남성";
             }
         });
 
@@ -83,6 +85,7 @@ public class SignupActivity extends AppCompatActivity {
                     female.setChecked(true);
                 }
                 gender = true;
+                Isgender = "여성";
             }
         });
 
@@ -126,8 +129,9 @@ public class SignupActivity extends AppCompatActivity {
                     toast.show();
                     Intent intent = new Intent(SignupActivity.this,MainActivity.class);
                     startActivity(intent);
-                    userInfo.addAll(Email.getText().toString()+"="+Password.getText().toString()+"="+Nickname.getText().toString()
-                            +"="+Name.getText().toString()+"="+Birth.getText().toString()+"="+Phone.getText().toString());
+                    String tmp = Email.getText().toString()+"="+Password.getText().toString()+"="+Nickname.getText().toString()
+                            +"="+Name.getText().toString()+"="+Birth.getText().toString()+"="+Phone.getText().toString()+"="+Isgender;
+                    userInfo.addAll(tmp);
                 }else{
                     Toast toast = Toast.makeText(getApplicationContext(),"모두 입력해 주세요.",Toast.LENGTH_SHORT);
                     toast.show();

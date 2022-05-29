@@ -43,7 +43,7 @@
         app:srcCompat="@drawable/profile" />
 
     <TextView
-        android:id="@+id/NickName"
+        android:id="@+id/Profile_NickName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -227,4 +227,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Profile_Review" />
+    <include layout="@layout/toolbar_source">
+
+    </include>
 </androidx.constraintlayout.widget.ConstraintLayout>

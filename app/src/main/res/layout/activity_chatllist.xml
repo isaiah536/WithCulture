@@ -279,5 +279,8 @@
         app:layout_constraintStart_toStartOf="@+id/alarm1"
         app:layout_constraintTop_toTopOf="@+id/alarm1"
         tools:ignore="MissingConstraints" />
+    <include layout="@layout/toolbar_source">
+
+    </include>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
