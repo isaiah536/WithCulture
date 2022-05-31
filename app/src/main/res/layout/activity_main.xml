@@ -50,8 +50,8 @@
     <ImageView
         android:id="@+id/accompany_box"
         android:layout_width="374dp"
-        android:layout_height="283dp"
-        android:layout_marginTop="24dp"
+        android:layout_height="255dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
