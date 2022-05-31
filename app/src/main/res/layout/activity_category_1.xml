@@ -5,6 +5,10 @@
     android:background="#f9f9f9"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    
+    <include layout="@layout/toolbar_source">
+
+    </include>
 
     <ImageView
         android:id="@+id/toolbar"
@@ -437,8 +441,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/faint_gray_box" />
 
-    <include layout="@layout/toolbar_source">
-
-    </include>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
