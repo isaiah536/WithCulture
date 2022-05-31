@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     android:background="#f9f9f9"
     tools:context=".MainActivity">
+
     <include
+        android:id="@+id/include2"
         layout="@layout/toolbar_source"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="-57dp">
@@ -18,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="224dp"
         android:layout_marginBottom="3dp"
         android:text="With Me"
@@ -49,7 +51,7 @@
     <ImageView
         android:id="@+id/accompany_box"
         android:layout_width="374dp"
-        android:layout_height="283dp"
+        android:layout_height="255dp"
         android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
@@ -60,12 +62,15 @@
     <ImageView
         android:id="@+id/community_box"
         android:layout_width="374dp"
-        android:layout_height="180dp"
-        android:layout_marginTop="7dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/include2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/default_box" />
 
     <TextView
@@ -103,19 +108,13 @@
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="9dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:text="▶ 전체보기"
         android:textColor="#8da1fe"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/community_box"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.93"
-        app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/accompany_box"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <TextView
         android:id="@+id/main_Accompany_title_1"

@@ -9,48 +9,48 @@
         android:id="@+id/bar_profile"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginEnd="50dp"
         android:layout_marginBottom="10dp"
         android:alpha="0.3"
-        app:tint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/profile_icon" />
+        app:layout_constraintStart_toEndOf="@+id/bar_chat"
+        app:srcCompat="@drawable/profile_icon"
+        app:tint="#000000" />
 
     <ImageView
         android:id="@+id/bar_chat"
         android:layout_width="28dp"
         android:layout_height="28dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginStart="30dp"
         android:layout_marginBottom="10dp"
         android:alpha="0.3"
-        app:tint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/bar_profile"
-        app:srcCompat="@drawable/chat_circle" />
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:srcCompat="@drawable/chat_full"
+        app:tint="#000000" />
 
     <ImageView
         android:id="@+id/bar_category"
         android:layout_width="32dp"
         android:layout_height="32dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginBottom="10dp"
-        app:tint="#808080"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bar_home"
-        app:srcCompat="@drawable/category" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline13"
+        app:srcCompat="@drawable/category"
+        app:tint="#808080" />
 
     <ImageView
         android:id="@+id/bar_home"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginStart="50dp"
         android:layout_marginBottom="10dp"
         android:alpha="0.3"
-        app:tint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bar_category"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/homeicon" />
+        app:srcCompat="@drawable/homeicon"
+        app:tint="#000000" />
 
     <View
         android:id="@+id/divider12"
@@ -61,5 +61,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="199dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
