@@ -51,6 +51,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="10dp"
         android:text="@string/모집중"
+        android:backgroundTint="#8da1fe"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.032"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,6 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:text="@string/동행신청하기"
+        android:backgroundTint="#8da1fe"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.944"
@@ -111,27 +113,28 @@
 
     <ImageView
         android:id="@+id/write_preset_push_heart"
-        android:layout_width="59dp"
-        android:layout_height="45dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_marginBottom="12dp"
         android:contentDescription="@string/heart"
+        android:src="@drawable/heart_full"
+        app:tint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.045"
-        app:layout_constraintStart_toStartOf="parent"
-        android:src="@drawable/heart"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/write_preset_heart"
-        android:layout_width="59dp"
-        android:layout_height="45dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_marginTop="10dp"
         android:contentDescription="@string/heart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/write_preset_writing"
-        android:src="@drawable/like" />
+        android:src="@drawable/heart_full" />
 
     <TextView
         android:id="@+id/write_preset_tiltle"

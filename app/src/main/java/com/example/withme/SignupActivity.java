@@ -14,6 +14,10 @@ import android.widget.Toast;
 
 import com.example.withme.data.UserInfo;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.OutputStream;
 import java.util.Random;
 
 
@@ -132,6 +136,23 @@ public class SignupActivity extends AppCompatActivity {
                     String tmp = Email.getText().toString()+"="+Password.getText().toString()+"="+Nickname.getText().toString()
                             +"="+Name.getText().toString()+"="+Birth.getText().toString()+"="+Phone.getText().toString()+"="+Isgender;
                     userInfo.addAll(tmp);
+
+                    File file = new File("drawalbe/LoginInfo.txt");
+                    FileWriter fw = null;
+                    try{
+                        fw = new FileWriter(file);
+                        fw.write(tmp);
+                        System.out.println("write");
+                    }catch(Exception e){
+                        e.printStackTrace();
+                    }
+                    if (fw != null) {
+                        try {
+                            fw.close() ;
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
                 }else{
                     Toast toast = Toast.makeText(getApplicationContext(),"모두 입력해 주세요.",Toast.LENGTH_SHORT);
                     toast.show();

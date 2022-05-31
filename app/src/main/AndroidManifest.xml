@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Withme">
         <activity
+            android:name=".Profile_preview"
+            android:exported="false"
+            android:theme="@style/NoTitleBarDialog"/>
+        <activity
             android:name=".Information"
             android:exported="false" />
         <activity
@@ -35,12 +39,6 @@
             android:exported="false" />
         <activity
             android:name=".CommunityActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ChatActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ChatListActivity"
             android:exported="false" />
         <activity
             android:name=".Profile"

@@ -11,15 +11,33 @@ import android.widget.TextView;
 
 import com.example.withme.data.UserInfo;
 
+import java.util.jar.Attributes;
+
 public class Profile extends AppCompatActivity {
 UserInfo userInfo;
+TextView NicknameP;
+TextView NameP;
+TextView AgeP;
+TextView GenderP;
+TextView EmailP;
+
 SignupActivity signupActivity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
         userInfo = new UserInfo();
+        NicknameP = findViewById(R.id.Profile_NickName);
+        NameP = findViewById(R.id.Profile_Name_set);
+        AgeP = findViewById(R.id.Profile_Age_set);
+        GenderP = findViewById(R.id.Profile_Gender_set);
+        EmailP = findViewById(R.id.Profile_Email_set);
 
+        NicknameP.setText("Seoyoung99");
+        NameP.setText("김서영");
+        AgeP.setText("25");
+        GenderP.setText("여성");
+        EmailP.setText("Seoyoung9999@cnu.ac.kr");
         ImageView toolbar_home = findViewById(R.id.bar_home);
         toolbar_home.setOnClickListener(new View.OnClickListener() {
             @Override
