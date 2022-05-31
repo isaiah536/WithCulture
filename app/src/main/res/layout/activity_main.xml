@@ -22,12 +22,10 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="224dp"
-        android:layout_marginBottom="3dp"
-        android:text="With Me"
+        android:text="With Culture"
         android:textColor="#212121"
-        android:textSize="50sp"
+        android:textSize="48sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,6 +35,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
         android:layout_marginBottom="8dp"
         android:text="이런 동행은 어떠신가요?"
         android:textColor="#5E5E5E"
@@ -117,120 +116,219 @@
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <TextView
-        android:id="@+id/main_Accompany_title_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:text="@string/oo"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/accompany_box"
-        app:layout_constraintTop_toTopOf="@+id/accompany_box" />
-
-    <TextView
-        android:id="@+id/main_Accompany_write_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:text="@string/_00_xx_xx_xx"
-        app:layout_constraintStart_toStartOf="@+id/accompany_box"
-        app:layout_constraintTop_toBottomOf="@+id/main_Accompany_title_1" />
-
-    <TextView
-        android:id="@+id/main_Accompany_title_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:text="@string/oo00"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/accompany_box"
-        app:layout_constraintTop_toBottomOf="@+id/main_Accompany_write_1" />
-
-    <TextView
-        android:id="@+id/main_Accompany_write_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:text="오늘 19시에 하는 OO전시회 같이 가서 구경하실 분 있나요?\n 신청해주세요~!"
-        app:layout_constraintStart_toStartOf="@+id/accompany_box"
-        app:layout_constraintTop_toBottomOf="@+id/main_Accompany_title_2" />
-
-    <TextView
-        android:id="@+id/main_Accompany_write_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:text="@string/xx_n"
-        app:layout_constraintStart_toStartOf="@+id/accompany_box"
-        app:layout_constraintTop_toBottomOf="@+id/main_Accompany_title_3" />
-
-    <TextView
-        android:id="@+id/main_Accompany_title_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:text="@string/xx"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/accompany_box"
-        app:layout_constraintTop_toBottomOf="@+id/main_Accompany_write_2" />
-
-    <TextView
         android:id="@+id/main_community_title_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:text="오늘 XX 연극"
+        android:layout_marginTop="15dp"
+        android:text="앞자리 민폐;; [46]"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textStyle="normal"
         app:layout_constraintStart_toStartOf="@+id/community_box"
         app:layout_constraintTop_toTopOf="@+id/community_box" />
-
-    <TextView
-        android:id="@+id/main_community_write_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:text="오늘 XX 연극에서 OOO 배우 보셨어요?"
-        app:layout_constraintStart_toStartOf="@+id/community_box"
-        app:layout_constraintTop_toBottomOf="@+id/main_community_title_1" />
 
     <TextView
         android:id="@+id/main_community_title_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text="@string/oo000"
+        android:text="저번 주에 한 노틀담 드 파리 본... [38]"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/community_box"
-        app:layout_constraintTop_toBottomOf="@+id/main_community_write_1" />
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/main_community_title_1"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
 
-    <TextView
-        android:id="@+id/main_community_write_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:text="ㅁㅁㅁ배우"
-        app:layout_constraintStart_toStartOf="@+id/community_box"
+    <View
+        android:id="@+id/view2"
+        android:layout_width="354dp"
+        android:layout_height="2dp"
+        android:background="#5E5E5E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_community_title_1" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="354dp"
+        android:layout_height="2dp"
+        android:background="#5E5E5E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main_community_title_2" />
 
+    <View
+        android:id="@+id/view4"
+        android:layout_width="354dp"
+        android:layout_height="2dp"
+        android:background="#5E5E5E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="354dp"
+        android:layout_height="2dp"
+        android:background="#5E5E5E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView70" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="구스타프 클림트에 대해 알아보... [34]"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/main_community_title_2"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="사이비 분별하는 법 [32]"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/textView58"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <ImageView
+        android:id="@+id/imageView41"
+        android:layout_width="354dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/accompany_box"
+        app:srcCompat="@drawable/faint_gray_box" />
+
+    <ImageView
+        android:id="@+id/imageView42"
+        android:layout_width="354dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView41"
+        app:layout_constraintTop_toBottomOf="@+id/imageView41"
+        app:srcCompat="@drawable/faint_gray_box" />
+
+    <ImageView
+        android:id="@+id/imageView46"
+        android:layout_width="354dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView42"
+        app:layout_constraintTop_toBottomOf="@+id/imageView42"
+        app:srcCompat="@drawable/faint_gray_box" />
+
+    <ImageView
+        android:id="@+id/imageView49"
+        android:layout_width="354dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView46"
+        app:layout_constraintTop_toBottomOf="@+id/imageView46"
+        app:srcCompat="@drawable/faint_gray_box" />
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="노트르담 드 파리 같이 보러 가실 분?"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toTopOf="@+id/imageView41" />
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="CLIMT INSIDE 같이 갈 분?"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toTopOf="@+id/imageView42" />
+
+    <TextView
+        android:id="@+id/textView73"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="조형에 관심 있으신분 찾습니다"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toTopOf="@+id/imageView46" />
+
+    <TextView
+        android:id="@+id/textView74"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="10cm 콘서트 같이 가실 분?"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toTopOf="@+id/imageView49" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="91dp" />
+
+    <TextView
+        android:id="@+id/textView75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="6월 12일, 서울 예술의전당"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/textView71" />
+
+    <TextView
+        android:id="@+id/textView76"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="6월 20일, 대전시립미술관"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/textView72" />
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="6월 17일, 홍익대학교"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/textView73" />
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="6월 30일, 서울 블루스퀘어"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/textView74" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
