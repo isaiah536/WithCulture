@@ -46,9 +46,7 @@ public class Accompany_write3 extends AppCompatActivity {
         profileAge = findViewById(R.id.Preview_Age);
         profileGender = findViewById(R.id.Preview_Gender);
 
-        //profileNickname.setText("isaiah_yeohs");
-        //profileAge.setText("21");
-        //profileGender.setText("남성");
+
 
         ImageView back2 = findViewById(R.id.back2);
         back2.setOnClickListener(new View.OnClickListener() {
@@ -56,6 +54,9 @@ public class Accompany_write3 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Accompany_write3.this,Accompany.class);
                 startActivity(intent);
+                //profileNickname.setText("isaiah_yeohs");
+                //profileAge.setText("21");
+                //profileGender.setText("남성");
             }
         });
 
