@@ -85,4 +85,34 @@
         app:tint="#8da1fe"
         tools:ignore="MissingConstraints" />
 
+    <EditText
+        android:id="@+id/commentbox"
+        android:layout_width="321dp"
+        android:layout_height="271dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="530dp"
+        android:background="@drawable/commentbox"
+        android:backgroundTint="#8da1fe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile"
+        app:layout_constraintVertical_bias="0.497"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/send"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="605dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/commentbox"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:srcCompat="@drawable/send2"
+        app:tint="#8da1fe"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
