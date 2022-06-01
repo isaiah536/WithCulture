@@ -50,15 +50,16 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:text="오늘 XX 연극"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/text"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/text"
@@ -70,9 +71,9 @@
         android:textColor="#000000"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/line"
+        app:layout_constraintStart_toStartOf="@+id/title"
         app:layout_constraintTop_toBottomOf="@+id/title"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/heart"
@@ -135,33 +136,16 @@
         android:layout_width="380dp"
         android:layout_height="1dp"
         android:layout_gravity="center"
-        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="556dp"
         android:background="#A9A9A9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/text"
         app:layout_constraintTop_toBottomOf="@+id/heart"
         tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/button_text"
-        android:layout_width="410dp"
-        android:layout_height="101dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginBottom="2dp"
-        android:background="#00FFFFFF"
-        android:text=""
-        app:layout_constraintBottom_toTopOf="@+id/line"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/title2"
@@ -172,9 +156,9 @@
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/line"
         app:layout_constraintTop_toBottomOf="@+id/line"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="15dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/text2"
@@ -184,9 +168,9 @@
         android:text="ㅁㅁㅁ배우"
         android:textColor="#000000"
         android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/title2"
         app:layout_constraintTop_toBottomOf="@+id/title2"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="15dp" />
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/heart2"
@@ -249,13 +233,12 @@
         android:layout_width="380dp"
         android:layout_height="1dp"
         android:layout_gravity="center"
-        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="15dp"
         android:background="#A9A9A9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/text2"
         app:layout_constraintTop_toBottomOf="@+id/heart2"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
@@ -269,9 +252,9 @@
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/line2"
         app:layout_constraintTop_toBottomOf="@+id/line2"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/text3"
@@ -281,9 +264,9 @@
         android:text="내용 일부"
         android:textColor="#000000"
         android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/title3"
         app:layout_constraintTop_toBottomOf="@+id/title3"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/heart3"
@@ -346,14 +329,13 @@
         android:layout_width="380dp"
         android:layout_height="1dp"
         android:layout_gravity="center"
-        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="15dp"
         android:background="#A9A9A9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/text3"
         app:layout_constraintTop_toBottomOf="@+id/heart3"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
@@ -367,9 +349,9 @@
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/line3"
         app:layout_constraintTop_toBottomOf="@+id/line3"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="15dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/text4"
@@ -379,9 +361,9 @@
         android:text="내용 일부"
         android:textColor="#000000"
         android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/title4"
         app:layout_constraintTop_toBottomOf="@+id/title4"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="15dp" />
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/heart4"
@@ -444,13 +426,12 @@
         android:layout_width="380dp"
         android:layout_height="1dp"
         android:layout_gravity="center"
-        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="15dp"
         android:background="#A9A9A9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/text4"
         app:layout_constraintTop_toBottomOf="@+id/heart4"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
@@ -464,9 +445,9 @@
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/line4"
         app:layout_constraintTop_toBottomOf="@+id/line4"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="15dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/text5"
@@ -476,9 +457,9 @@
         android:text="내용 일부"
         android:textColor="#000000"
         android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/title5"
         app:layout_constraintTop_toBottomOf="@+id/title5"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="15dp" />
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/heart5"
@@ -541,16 +522,16 @@
         android:layout_width="380dp"
         android:layout_height="1dp"
         android:layout_gravity="center"
-        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="15dp"
         android:background="#A9A9A9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/text5"
         app:layout_constraintTop_toBottomOf="@+id/heart5"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
+
     <TextView
         android:id="@+id/title6"
         android:layout_width="wrap_content"
@@ -560,9 +541,9 @@
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/line5"
         app:layout_constraintTop_toBottomOf="@+id/line5"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="15dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/text6"
@@ -572,9 +553,9 @@
         android:text="내용 일부"
         android:textColor="#000000"
         android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/title6"
         app:layout_constraintTop_toBottomOf="@+id/title6"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="15dp" />
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/heart6"
@@ -637,15 +618,31 @@
         android:layout_width="380dp"
         android:layout_height="1dp"
         android:layout_gravity="center"
-        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="15dp"
         android:background="#A9A9A9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/text6"
         app:layout_constraintTop_toBottomOf="@+id/heart6"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/button_text"
+        android:layout_width="410dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="2dp"
+        android:background="#00FFFFFF"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

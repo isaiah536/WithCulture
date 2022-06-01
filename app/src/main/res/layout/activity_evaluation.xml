@@ -203,7 +203,7 @@
         app:srcCompat="@drawable/default_box" />
 
     <ImageView
-        android:id="@+id/imageView63"
+        android:id="@+id/finish"
         android:layout_width="372dp"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
@@ -221,9 +221,9 @@
         android:text="동행 완료"
         android:textColor="#000000"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView63"
-        app:layout_constraintEnd_toEndOf="@+id/imageView63"
-        app:layout_constraintStart_toStartOf="@+id/imageView63"
-        app:layout_constraintTop_toTopOf="@+id/imageView63" />
+        app:layout_constraintBottom_toBottomOf="@+id/finish"
+        app:layout_constraintEnd_toEndOf="@+id/finish"
+        app:layout_constraintStart_toStartOf="@+id/finish"
+        app:layout_constraintTop_toTopOf="@+id/finish" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

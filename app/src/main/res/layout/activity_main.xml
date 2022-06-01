@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="224dp"
         android:text="With Culture"
         android:textColor="#212121"
@@ -61,7 +61,7 @@
     <ImageView
         android:id="@+id/community_box"
         android:layout_width="374dp"
-        android:layout_height="160dp"
+        android:layout_height="130dp"
         android:layout_marginTop="7dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
@@ -124,7 +124,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="15dp"
-        android:text="앞자리 민폐;; [46]"
+        android:text="오늘 XX연극 [03]"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="normal"
@@ -162,16 +162,6 @@
         app:layout_constraintTop_toBottomOf="@+id/main_community_title_2" />
 
     <View
-        android:id="@+id/view4"
-        android:layout_width="354dp"
-        android:layout_height="2dp"
-        android:background="#5E5E5E"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView58" />
-
-    <View
         android:id="@+id/view6"
         android:layout_width="354dp"
         android:layout_height="2dp"
@@ -182,28 +172,16 @@
         app:layout_constraintTop_toBottomOf="@+id/textView70" />
 
     <TextView
-        android:id="@+id/textView58"
+        android:id="@+id/textView70"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="구스타프 클림트에 대해 알아보... [34]"
+        android:layout_marginTop="15dp"
+        android:text="저번 주에 한 OO 뮤지컬 본사람? [10]"
         android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="normal"
         app:layout_constraintStart_toStartOf="@+id/main_community_title_2"
         app:layout_constraintTop_toBottomOf="@+id/view3" />
-
-    <TextView
-        android:id="@+id/textView70"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="사이비 분별하는 법 [32]"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:textStyle="normal"
-        app:layout_constraintStart_toStartOf="@+id/textView58"
-        app:layout_constraintTop_toBottomOf="@+id/view4" />
 
     <ImageView
         android:id="@+id/imageView41"
@@ -247,7 +225,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="노트르담 드 파리 같이 보러 가실 분?"
+        android:text="팀버튼 특별전 동행 구해요"
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -271,7 +249,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="조형에 관심 있으신분 찾습니다"
+        android:text="6월 4일에 전시회 같이 가실분?"
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -295,14 +273,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="91dp" />
+        app:layout_constraintGuide_begin="40dp" />
 
     <TextView
         android:id="@+id/textView75"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="6월 12일, 서울 예술의전당"
+        android:text="6월 20일, 서울"
         app:layout_constraintStart_toStartOf="@+id/guideline13"
         app:layout_constraintTop_toBottomOf="@+id/textView71" />
 
@@ -320,7 +298,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="6월 17일, 홍익대학교"
+        android:text="6월 4일, 서울"
         app:layout_constraintStart_toStartOf="@+id/guideline13"
         app:layout_constraintTop_toBottomOf="@+id/textView73" />
 

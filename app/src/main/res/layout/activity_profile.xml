@@ -6,23 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".Profile">
 
-    <include layout="@layout/toolbar_source">
+    <include
+        android:id="@+id/include3"
+        layout="@layout/toolbar_source">
 
     </include>
-
-    <ImageView
-        android:id="@+id/back6"
-        android:layout_width="33dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.002"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back"
-        app:tint="#8da1fe"
-        tools:ignore="MissingConstraints" />
 
     <View
         android:id="@+id/divider6"
@@ -205,5 +193,18 @@
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/Profile_Age"
         app:layout_constraintTop_toTopOf="@+id/Profile_Age" />
+
+    <TextView
+        android:id="@+id/text_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="프로필"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:tint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
