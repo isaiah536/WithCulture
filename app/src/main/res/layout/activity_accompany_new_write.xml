@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Accompany_new_write">
 
+
     <ImageButton
         android:id="@+id/writeAccompany2"
         android:layout_width="34dp"
@@ -84,7 +85,7 @@
     <EditText
         android:id="@+id/editTextTextMultiLine2"
         android:layout_width="320dp"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:layout_marginTop="20dp"
         android:autofillHints=""
         android:ems="10"
@@ -101,17 +102,139 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
-        android:layout_width="320dp"
-        android:layout_height="49dp"
-        android:layout_marginBottom="236dp"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
         android:autofillHints=""
         android:ems="10"
-        android:hint="@string/태그"
+        android:hint="사용자 지정 태그"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColorHint="#757575"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/tag3"
+        app:layout_constraintTop_toBottomOf="@+id/tag4" />
+
+    <Button
+        android:id="@+id/tag0"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="사진을 많이 찍어요"
+        android:textSize="10dp"
+        android:backgroundTint="#8da1fe"
+        app:layout_constraintStart_toStartOf="@+id/tag_title"
+        app:layout_constraintTop_toBottomOf="@+id/tag_title" />
+
+    <Button
+        android:id="@+id/tag1"
+        android:layout_width="73dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="활동적인 "
+        android:textSize="10dp"
+        app:layout_constraintStart_toEndOf="@+id/tag0"
+        app:layout_constraintTop_toBottomOf="@+id/tag_title" />
+
+    <Button
+        android:id="@+id/tag2"
+        android:layout_width="73dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="조용한"
+        android:textSize="10dp"
+        app:layout_constraintStart_toEndOf="@+id/tag1"
+        app:layout_constraintTop_toBottomOf="@+id/tag_title" />
+
+    <Button
+        android:id="@+id/tag3"
+        android:layout_width="73dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:text="분석하는"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="@+id/tag0"
+        app:layout_constraintTop_toBottomOf="@+id/tag0" />
+
+    <Button
+        android:id="@+id/tag4"
+        android:layout_width="73dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="감정이입"
+        android:textSize="10dp"
+        app:layout_constraintStart_toEndOf="@+id/tag3"
+        app:layout_constraintTop_toBottomOf="@+id/tag1" />
+
+    <TextView
+        android:id="@+id/tag_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="이런 사람을 원해요"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2" />
+
+    <TextView
+        android:id="@+id/textView91"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="지역"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+
+    <TextView
+        android:id="@+id/textView92"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="날짜"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView91"
+        app:layout_constraintTop_toBottomOf="@+id/textView91" />
+
+    <ImageView
+        android:id="@+id/calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-5dp"
+        app:layout_constraintStart_toEndOf="@+id/date"
+        app:layout_constraintTop_toTopOf="@+id/date"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/textView92"
+        app:layout_constraintTop_toTopOf="@+id/textView92" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="입력하세요"
+        app:layout_constraintStart_toEndOf="@+id/textView91"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

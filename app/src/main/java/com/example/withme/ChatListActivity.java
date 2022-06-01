@@ -16,7 +16,16 @@ public class ChatListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chatllist);
 
-        Button accept = (Button) findViewById(R.id.accept);
+        ImageView back = findViewById(R.id.backchatlist);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ChatListActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button accept = (Button) findViewById(R.id.chat1accept);
         accept.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -24,6 +33,7 @@ public class ChatListActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
         ImageView toolbar_home = findViewById(R.id.bar_home);
         toolbar_home.setOnClickListener(new View.OnClickListener() {

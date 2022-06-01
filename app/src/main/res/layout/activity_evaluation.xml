@@ -67,38 +67,16 @@
         app:srcCompat="@drawable/back"
         app:tint="#8da1fe" />
 
-    <ImageView
-        android:id="@+id/imageView59"
-        android:layout_width="372dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view8"
-        app:srcCompat="@drawable/default_box" />
-
-    <TextView
-        android:id="@+id/textView80"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
-        android:text="글 제목"
-        android:textColor="#333333"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView59"
-        app:layout_constraintStart_toStartOf="@+id/imageView59"
-        app:layout_constraintTop_toTopOf="@+id/imageView59" />
-
     <TextView
         android:id="@+id/textView81"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="20dp"
         android:text="abcd님과의 만남은 어떠셨나요?"
         android:textColor="#333333"
         android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@+id/imageView59"
-        app:layout_constraintTop_toBottomOf="@+id/imageView59" />
+        app:layout_constraintTop_toBottomOf="@+id/view8"
+        tools:layout_editor_absoluteX="20dp" />
 
     <ImageView
         android:id="@+id/imageView60"
@@ -159,8 +137,8 @@
         android:text="어떤 점이 별로였나요?"
         android:textColor="#333333"
         android:textSize="22sp"
-        app:layout_constraintStart_toStartOf="@+id/imageView59"
-        app:layout_constraintTop_toBottomOf="@+id/textView82" />
+        app:layout_constraintTop_toBottomOf="@+id/textView82"
+        tools:layout_editor_absoluteX="20dp" />
 
     <TextView
         android:id="@+id/textView89"
@@ -240,7 +218,7 @@
         android:id="@+id/textView90"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="후기 보내기"
+        android:text="동행 완료"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView63"

@@ -6,6 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".Accompany">
 
+    <Button
+        android:id="@+id/write1_button"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:background="#00ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        tools:ignore="issingConstraints" />
+
+    <Button
+        android:id="@+id/write2_button"
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:background="#00ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <Button
+        android:id="@+id/write3_button"
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        android:background="#00ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
     <ImageView
         android:id="@+id/back4"
         android:layout_width="33dp"
@@ -46,7 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
-        android:text="@string/oo"
+        android:text="팀버튼 특별전 동행 구해요"
         android:textColor="#000000"
         android:textStyle="bold"
         android:textSize="20sp"
@@ -71,7 +100,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/_00_xx_xx_xx"
+        android:text="동대문디자인플라자에서 하는 팀 버튼 특별전 6월 20일에 \n같이 가실 분 있나요?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,12 +110,10 @@
         android:id="@+id/write1_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/dalee2008"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.028"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/write1_writing" />
+        android:layout_marginTop="5dp"
+        android:text="y.minzl"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <View
         android:id="@+id/divider2"
@@ -117,13 +144,14 @@
         android:id="@+id/write2_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
-        android:text="@string/oo00"
-        android:textSize="20sp"
+        android:text="6월 4일에 전시회 같이 가실분?"
         android:textColor="#000000"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider2" />
 
@@ -132,22 +160,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/_19_oo_n"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="The Color Spot : 꿈속의 자연 같이 보러 가실분 있나요?"
+        app:layout_constraintStart_toStartOf="@+id/write2_title"
         app:layout_constraintTop_toBottomOf="@+id/write2_title" />
 
     <TextView
         android:id="@+id/write2_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:text="@string/dhdhshhs_388"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.031"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/write2_writing" />
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <ImageView
         android:id="@+id/write2_heart"
@@ -202,12 +226,12 @@
         android:id="@+id/write3_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:text="@string/isaiah_yeohs"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/write3_writing" />
+        app:layout_constraintTop_toBottomOf="@+id/textView79" />
 
     <View
         android:id="@+id/divider4"
@@ -237,54 +261,34 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/xx_xx_xx"
+        android:layout_marginTop="10dp"
+        android:text="6월 20일   서울   "
         android:textColor="#000000"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/write1_writing"
         app:layout_constraintTop_toBottomOf="@+id/write1_writing" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/_19"
+        android:layout_marginTop="5dp"
+        android:text="6월 4일   서울  "
         android:textColor="#000000"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/write2_writing"
         app:layout_constraintTop_toBottomOf="@+id/write2_writing" />
 
-    <Button
-        android:id="@+id/write1_button"
-        android:layout_width="match_parent"
-        android:layout_height="145dp"
-        android:background="#00ffffff"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
-        tools:ignore="issingConstraints" />
+    <TextView
+        android:id="@+id/textView79"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="X월 X일   대전    활동적인 사람"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/write3_writing"
+        app:layout_constraintTop_toBottomOf="@+id/write3_writing" />
 
-    <Button
-        android:id="@+id/write2_button"
-        android:layout_width="match_parent"
-        android:layout_height="166dp"
-        android:background="#00ffffff"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider2" />
-
-    <Button
-        android:id="@+id/write3_button"
-        android:layout_width="match_parent"
-        android:layout_height="163dp"
-        android:background="#00ffffff"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

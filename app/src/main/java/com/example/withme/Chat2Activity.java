@@ -19,6 +19,16 @@ public class Chat2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Chat2Activity.this, Chat3Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView back = findViewById(R.id.backchat);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Chat2Activity.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }

@@ -44,7 +44,7 @@
         app:srcCompat="@drawable/profile" />
 
     <TextView
-        android:id="@+id/Profile_NickName"
+        android:id="@+id/Preview_Nickname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -55,52 +55,27 @@
         app:layout_constraintTop_toBottomOf="@+id/divider6" />
 
     <TextView
-        android:id="@+id/Profile_Name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:text="이름 : "
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.002"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <TextView
-        android:id="@+id/Profile_Name_set"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/name"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/Profile_Name"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <TextView
         android:id="@+id/Profile_Age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:text="나이 : "
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.002"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Profile_Name" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
-        android:id="@+id/Profile_Age_set"
+        android:id="@+id/Preview_Age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
         android:text="Age"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/Profile_Age"
-        app:layout_constraintTop_toBottomOf="@+id/Profile_Name_set" />
+        app:layout_constraintTop_toTopOf="@+id/Profile_Age" />
 
     <TextView
         android:id="@+id/Profile_Gender"
@@ -116,7 +91,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Profile_Age" />
 
     <TextView
-        android:id="@+id/Profile_Gender_set"
+        android:id="@+id/Preview_Gender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -124,67 +99,21 @@
         android:text="Gender"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/Profile_Gender"
-        app:layout_constraintTop_toBottomOf="@+id/Profile_Age_set" />
-
-    <TextView
-        android:id="@+id/Profile_Email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:text="이메일 : "
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.002"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Profile_Gender" />
-
-    <TextView
-        android:id="@+id/Profile_Password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:text="비밀번호 : "
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Profile_Email" />
-
-    <TextView
-        android:id="@+id/Profile_Email_set"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:text="Email"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/Profile_Email"
-        app:layout_constraintTop_toBottomOf="@+id/Profile_Gender_set" />
-
-    <TextView
-        android:id="@+id/Profile_Password_set"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="*******"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/Profile_Password"
-        app:layout_constraintTop_toBottomOf="@+id/Profile_Email_set" />
+        app:layout_constraintTop_toBottomOf="@+id/Preview_Age" />
 
     <View
         android:id="@+id/divider9"
         android:layout_width="409dp"
         android:layout_height="1dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Profile_Password" />
+        app:layout_constraintTop_toBottomOf="@+id/Preview_Gender" />
 
     <TextView
-        android:id="@+id/Profile_Review"
+        android:id="@+id/Preview_Accompany"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -204,7 +133,7 @@
         android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Profile_Review" />
+        app:layout_constraintTop_toBottomOf="@+id/Preview_Accompany" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

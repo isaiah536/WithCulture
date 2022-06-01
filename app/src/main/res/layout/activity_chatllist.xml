@@ -5,9 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <include layout="@layout/toolbar_source">
+
+    </include>
 
     <Button
-        android:id="@+id/accept"
+        android:id="@+id/accept2"
+        android:layout_width="423dp"
+        android:layout_height="66dp"
+        android:background="#00FFFFFF"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/line1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/chat1accept"
         android:layout_width="423dp"
         android:layout_height="66dp"
         android:background="#00FFFFFF"
@@ -211,7 +226,7 @@
         tools:ignore="MissingConstraints" />
 
     <ImageView
-        android:id="@+id/back"
+        android:id="@+id/backchatlist"
         android:layout_width="33dp"
         android:layout_height="33dp"
         android:layout_marginStart="15dp"
@@ -279,8 +294,6 @@
         app:layout_constraintStart_toStartOf="@+id/alarm1"
         app:layout_constraintTop_toTopOf="@+id/alarm1"
         tools:ignore="MissingConstraints" />
-    <include layout="@layout/toolbar_source">
 
-    </include>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -39,16 +39,14 @@
         android:layout_width="54dp"
         android:layout_height="55dp"
         android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.03"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/write1_state"
         app:layout_constraintTop_toBottomOf="@+id/write1_state"
         app:srcCompat="@drawable/profile" />
 
     <Button
         android:id="@+id/write1_state"
-        android:layout_width="77dp"
-        android:layout_height="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="10dp"
         android:text="@string/모집중"
         android:backgroundTint="#8da1fe"
@@ -73,9 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/textview"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.031"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/write_preset_tiltle"
         app:layout_constraintTop_toBottomOf="@+id/write_preset_tiltle" />
 
     <Button
@@ -104,10 +100,9 @@
         android:id="@+id/write_preset_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:text="@string/textview"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toEndOf="@+id/write_preset_profile"
         app:layout_constraintTop_toBottomOf="@+id/write1_state" />
 
@@ -142,19 +137,16 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/textview"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.031"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/write_preset_profile"
         app:layout_constraintTop_toBottomOf="@+id/write_preset_profile" />
 
     <TextView
         android:id="@+id/write_preset_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:text="@string/textview"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toEndOf="@+id/write_preset_profile"
         app:layout_constraintTop_toBottomOf="@+id/write_preset_id" />
 </androidx.constraintlayout.widget.ConstraintLayout>

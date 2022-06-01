@@ -11,8 +11,6 @@ import android.widget.TextView;
 
 import com.example.withme.data.UserInfo;
 
-import java.util.jar.Attributes;
-
 public class Profile extends AppCompatActivity {
 UserInfo userInfo;
 TextView NicknameP;
@@ -27,7 +25,7 @@ SignupActivity signupActivity;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
         userInfo = new UserInfo();
-        NicknameP = findViewById(R.id.Profile_NickName);
+        NicknameP = findViewById(R.id.Profile_Nickname);
         NameP = findViewById(R.id.Profile_Name_set);
         AgeP = findViewById(R.id.Profile_Age_set);
         GenderP = findViewById(R.id.Profile_Gender_set);

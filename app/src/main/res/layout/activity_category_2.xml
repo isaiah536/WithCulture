@@ -6,6 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <include layout="@layout/toolbar_source">
+
+    </include>
+
     <ImageView
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -438,7 +442,5 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-    <include layout="@layout/toolbar_source">
 
-    </include>
 </androidx.constraintlayout.widget.ConstraintLayout>
