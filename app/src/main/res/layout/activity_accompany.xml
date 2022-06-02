@@ -6,34 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Accompany">
 
-    <Button
-        android:id="@+id/write1_button"
-        android:layout_width="match_parent"
-        android:layout_height="145dp"
-        android:background="#00ffffff"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
-        tools:ignore="issingConstraints" />
-
-    <Button
-        android:id="@+id/write2_button"
-        android:layout_width="match_parent"
-        android:layout_height="166dp"
-        android:background="#00ffffff"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider2" />
-
-    <Button
-        android:id="@+id/write3_button"
-        android:layout_width="match_parent"
-        android:layout_height="163dp"
-        android:background="#00ffffff"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider3" />
 
     <ImageView
         android:id="@+id/back4"
@@ -128,8 +100,8 @@
 
     <ImageView
         android:id="@+id/write1_heart"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:contentDescription="@string/heart"
@@ -175,8 +147,8 @@
 
     <ImageView
         android:id="@+id/write2_heart"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:contentDescription="@string/heart"
@@ -245,8 +217,8 @@
 
     <ImageView
         android:id="@+id/write3_heart"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -289,6 +261,34 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/write3_writing"
         app:layout_constraintTop_toBottomOf="@+id/write3_writing" />
+    <Button
+        android:id="@+id/write1_button"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:background="#00ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        tools:ignore="issingConstraints" />
+
+    <Button
+        android:id="@+id/write2_button"
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:background="#00ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <Button
+        android:id="@+id/write3_button"
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        android:background="#00ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

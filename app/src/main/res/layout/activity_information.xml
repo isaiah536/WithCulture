@@ -12,7 +12,7 @@
         android:scaleType="fitXY"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/info_paint"
-        tools:layout_editor_absoluteX="-1dp" />
+        tools:layout_editor_absoluteX="0dp" />
 
     <android.widget.Button
         android:id="@+id/button10"
