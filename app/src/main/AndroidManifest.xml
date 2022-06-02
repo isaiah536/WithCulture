@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Withme">
         <activity
-            android:name=".Evaluation_preview"
+            android:name=".accompanymainActivity"
             android:exported="false" />
         <activity
             android:name=".Evaluation"
