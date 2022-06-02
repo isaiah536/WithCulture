@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".accompanymainActivity">
+
+    <include
+        android:id="@+id/include4"
+        layout="@layout/toolbar_source"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    </include>
+
+    <TextView
+        android:id="@+id/with"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="224dp"
+        android:text="위드 Culture"
+        android:textColor="#8da1fe"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="개인"
+        android:textColor="#5E5E5E"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/ac_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="▶ 전체보기"
+        android:textColor="#8da1fe"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/accompany_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toEndOf="@+id/ac_real"
+        app:layout_constraintTop_toBottomOf="@+id/accompany_per"
+        app:layout_constraintVertical_bias="0.434" />
+
+    <TextView
+        android:id="@+id/ac_real"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="실시간 동행글"
+        android:textColor="#5E5E5E"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/accompany_box"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accompany_per"
+        app:layout_constraintVertical_bias="0.464" />
+
+    <ImageView
+        android:id="@+id/accompany_per"
+        android:layout_width="374dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/privacy"
+        app:srcCompat="@drawable/default_box"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/b1"
+        android:layout_width="354dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/accompany_per"
+        app:srcCompat="@drawable/faint_gray_box" />
+
+    <ImageView
+        android:id="@+id/b2"
+        android:layout_width="354dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/b1"
+        app:layout_constraintTop_toBottomOf="@+id/b1"
+        app:srcCompat="@drawable/faint_gray_box" />
+
+    <ImageView
+        android:id="@+id/b3"
+        android:layout_width="354dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/b2"
+        app:layout_constraintTop_toBottomOf="@+id/b2"
+        app:srcCompat="@drawable/faint_gray_box" />
+
+    <TextView
+        android:id="@+id/p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="내가 쓴 동행 글"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toTopOf="@+id/b1" />
+
+    <TextView
+        android:id="@+id/p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="신청한 동행"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toTopOf="@+id/b2" />
+
+    <TextView
+        android:id="@+id/p3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="하트"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toTopOf="@+id/b3" />
+
+    <ImageView
+        android:id="@+id/accompany_box"
+        android:layout_width="374dp"
+        android:layout_height="285dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/default_box"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="302dp" />
+
+    <TextView
+        android:id="@+id/accompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="동행"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include4"
+        app:layout_constraintVertical_bias="0.859"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/community"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="/ 커뮤니티"
+        android:textColor="#808080"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/accompany"
+        app:layout_constraintTop_toTopOf="@+id/include4"
+        app:layout_constraintVertical_bias="0.924"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="#8649494A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/box1"
+        android:layout_width="354dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/accompany_box"
+        app:srcCompat="@drawable/faint_gray_box" />
+
+    <ImageView
+        android:id="@+id/box2"
+        android:layout_width="354dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/box1"
+        app:layout_constraintTop_toBottomOf="@+id/box1"
+        app:srcCompat="@drawable/faint_gray_box" />
+
+    <ImageView
+        android:id="@+id/box3"
+        android:layout_width="354dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/box2"
+        app:layout_constraintTop_toBottomOf="@+id/box2"
+        app:srcCompat="@drawable/faint_gray_box" />
+
+    <ImageView
+        android:id="@+id/box4"
+        android:layout_width="354dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/box3"
+        app:layout_constraintTop_toBottomOf="@+id/box3"
+        app:srcCompat="@drawable/faint_gray_box" />
+
+    <TextView
+        android:id="@+id/a1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="팀버튼 특별전 동행 구해요"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toTopOf="@+id/box1" />
+
+    <TextView
+        android:id="@+id/a2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="CLIMT INSIDE 같이 갈 분?"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toTopOf="@+id/box2" />
+
+    <TextView
+        android:id="@+id/a3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="6월 4일에 전시회 같이 가실분?"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toTopOf="@+id/box3" />
+
+    <TextView
+        android:id="@+id/a4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="10cm 콘서트 같이 가실 분?"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toTopOf="@+id/box4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="40dp" />
+
+    <TextView
+        android:id="@+id/textView75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="6월 20일, 서울"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/a1" />
+
+    <TextView
+        android:id="@+id/textView76"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="6월 20일, 대전시립미술관"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/a2" />
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="6월 4일, 서울"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/a3" />
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="6월 30일, 서울 블루스퀘어"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/a4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
