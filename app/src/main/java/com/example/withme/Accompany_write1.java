@@ -44,11 +44,14 @@ public class Accompany_write1 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND, WindowManager.LayoutParams.FLAG_BLUR_BEHIND);
+        /*WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
         layoutParams.flags = WindowManager.LayoutParams.FLAG_DIM_BEHIND;
         layoutParams.dimAmount = 0.8f;
         getWindow().setAttributes(layoutParams);
+
+         */
+
 
         preset_profile = findViewById(R.id.write_preset_profile);
         preset_profile.setOnClickListener(new View.OnClickListener() {

@@ -21,6 +21,7 @@ public class Accompany extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Accompany.this,Accompany_write1.class);
+                intent.putExtra("type","1");
                 startActivity(intent);
             }
         });
