@@ -19,11 +19,6 @@ public class Accompany_write1 extends AppCompatActivity {
     TextView writing;
     TextView tag;
 
-    TextView profileNickname;
-    TextView profileAge;
-    TextView profileGender;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,11 +35,6 @@ public class Accompany_write1 extends AppCompatActivity {
         tag.setText("6월 20일   서울");
         title.setText("팀버튼 특별전 동행 구해요");
         writing.setText("동대문디자인플라자에서 하는 팀 버튼 특별전 6월 20일에 \n같이 가실 분 있나요?");
-
-        profileNickname = findViewById(R.id.Preview_Nickname);
-        profileAge = findViewById(R.id.Preview_Age);
-        profileGender = findViewById(R.id.Preview_Gender);
-
 
 
         back.setOnClickListener(new View.OnClickListener() {
@@ -65,10 +55,9 @@ public class Accompany_write1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Accompany_write1.this,Profile_preview.class);
+                intent.putExtra("write","1");
                 startActivity(intent);
-                //profileNickname.setText("Y.minzl");
-                //profileAge.setText("21");
-                //profileGender.setText("여성");
+
             }
         });
 

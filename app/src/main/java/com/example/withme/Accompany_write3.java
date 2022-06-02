@@ -20,10 +20,6 @@ public class Accompany_write3 extends AppCompatActivity {
     TextView writing;
     TextView tag;
 
-    TextView profileNickname;
-    TextView profileAge;
-    TextView profileGender;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,21 +38,14 @@ public class Accompany_write3 extends AppCompatActivity {
         title.setText("XX콘서트 막콘 동행 구해요!!");
         writing.setText("xx콘 막콘 동행 구해요 콘서트 하기 전에 돌아다니면서 \n"+ "같이 나눔 받으실 분이면 더 좋을 것 같아요!!");
 
-        profileNickname = findViewById(R.id.Preview_Nickname);
-        profileAge = findViewById(R.id.Preview_Age);
-        profileGender = findViewById(R.id.Preview_Gender);
-
-
-
         ImageView back2 = findViewById(R.id.back2);
         back2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Accompany_write3.this,Accompany.class);
+
                 startActivity(intent);
-                //profileNickname.setText("isaiah_yeohs");
-                //profileAge.setText("21");
-                //profileGender.setText("남성");
+
             }
         });
 
@@ -70,6 +59,7 @@ public class Accompany_write3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Accompany_write3.this,Profile_preview.class);
+                intent.putExtra("write","3");
                 startActivity(intent);
             }
         });

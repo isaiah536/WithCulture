@@ -20,10 +20,6 @@ public class Accompany_write2 extends AppCompatActivity {
     TextView writing;
     TextView tag;
 
-    TextView profileNickname;
-    TextView profileAge;
-    TextView profileGender;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,14 +37,6 @@ public class Accompany_write2 extends AppCompatActivity {
         tag.setText("6월 4일   서울");
         title.setText("6월 4일에 전시회 같이 가실분?");
         writing.setText("The Color Spot : 꿈속의 자연 같이 보러 가실분 있나요?");
-
-        profileNickname = findViewById(R.id.Preview_Nickname);
-        profileAge = findViewById(R.id.Preview_Age);
-        profileGender = findViewById(R.id.Preview_Gender);
-
-        //profileNickname.setText("dhdhshhs_338");
-        //profileAge.setText("22");
-        //profileGender.setText("여성");
 
         ImageView back2 = findViewById(R.id.back2);
         back2.setOnClickListener(new View.OnClickListener() {
@@ -70,6 +58,7 @@ public class Accompany_write2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Accompany_write2.this,Profile_preview.class);
+                intent.putExtra("write","2");
                 startActivity(intent);
             }
         });
