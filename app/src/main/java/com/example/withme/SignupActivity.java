@@ -131,7 +131,7 @@ public class SignupActivity extends AppCompatActivity {
                 if(emailconfirm&&gender&&nicknameB&&nameB&&birthB&&emailconfirm&&certificated&&passwordB){
                     Toast toast = Toast.makeText(getApplicationContext(),"가입되었습니다.",Toast.LENGTH_SHORT);
                     toast.show();
-                    Intent intent = new Intent(SignupActivity.this,MainActivity.class);
+                    Intent intent = new Intent(SignupActivity.this,accompanymainActivity.class);
                     startActivity(intent);
                     String tmp = Email.getText().toString()+"="+Password.getText().toString()+"="+Nickname.getText().toString()
                             +"="+Name.getText().toString()+"="+Birth.getText().toString()+"="+Phone.getText().toString()+"="+Isgender;

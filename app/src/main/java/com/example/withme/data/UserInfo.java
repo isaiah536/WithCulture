@@ -9,6 +9,10 @@ public class UserInfo {
     public UserInfo(){
         infoemail.add("1");
         infoall.add("1"+"="+"0");
+        infoemail.add("dhdhshhs_388");
+        infoemail.add("seoyoung99");
+        infoall.add("dhdhshhs_388=dhdhshhs_388");
+        infoall.add("seoyoung99@cnu.ac.kr=123456789");
     }
 
     public void addEmail(String s){

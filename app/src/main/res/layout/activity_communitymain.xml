@@ -9,7 +9,7 @@
     <include
         android:id="@+id/include4"
         layout="@layout/toolbar_source"
-        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteX="5dp"
         tools:layout_editor_absoluteY="0dp">
 
     </include>
@@ -23,7 +23,7 @@
         android:layout_marginEnd="224dp"
         android:text="위드 Culture"
         android:textColor="#8da1fe"
-        android:textSize="27sp"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -34,14 +34,13 @@
         android:id="@+id/privacy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="8dp"
         android:text="개인"
         android:textColor="#5E5E5E"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/accompany"
         app:layout_constraintTop_toBottomOf="@+id/view"
         tools:ignore="MissingConstraints" />
 
@@ -49,31 +48,27 @@
         android:id="@+id/cm_enter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="260dp"
         android:text="▶ 전체보기"
         android:textColor="#8da1fe"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/accompany_box"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintEnd_toEndOf="@+id/accompany_box"
         app:layout_constraintStart_toEndOf="@+id/cm_po"
-        app:layout_constraintTop_toBottomOf="@+id/accompany_per"
-        app:layout_constraintVertical_bias="0.434" />
+        app:layout_constraintTop_toTopOf="@+id/cm_po" />
 
     <TextView
         android:id="@+id/cm_po"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
         android:text="인기글"
         android:textColor="#5E5E5E"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/accompany_box"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/accompany_per"
-        app:layout_constraintVertical_bias="0.464" />
+        app:layout_constraintStart_toStartOf="@+id/accompany_per"
+        app:layout_constraintTop_toBottomOf="@+id/accompany_per" />
 
     <ImageView
         android:id="@+id/accompany_per"
@@ -91,9 +86,9 @@
         android:id="@+id/b1"
         android:layout_width="354dp"
         android:layout_height="30dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="@+id/accompany_per"
         app:layout_constraintTop_toTopOf="@+id/accompany_per"
         app:srcCompat="@drawable/faint_gray_box" />
 
@@ -119,62 +114,62 @@
         android:id="@+id/p1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
         android:text="내가 쓴 글"
         android:textColor="#000000"
-        android:textStyle="bold"
         android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/b1"
         app:layout_constraintTop_toTopOf="@+id/b1" />
 
     <TextView
         android:id="@+id/p2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="5dp"
         android:text="댓글 단 글"
-        android:textStyle="bold"
         android:textColor="#000000"
         android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/p1"
         app:layout_constraintTop_toTopOf="@+id/b2" />
 
     <TextView
         android:id="@+id/p3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="5dp"
         android:text="스크랩"
-        android:textStyle="bold"
         android:textColor="#000000"
         android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/p2"
         app:layout_constraintTop_toTopOf="@+id/b3" />
 
     <ImageView
         android:id="@+id/accompany_box"
         android:layout_width="374dp"
         android:layout_height="285dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cm_po"
         app:srcCompat="@drawable/default_box"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="302dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/accompany"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
         android:text="동행"
         android:textColor="#808080"
         android:textSize="19sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/view"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/include4"
-        app:layout_constraintVertical_bias="0.859"
+        app:layout_constraintStart_toStartOf="@+id/with"
+        app:layout_constraintTop_toBottomOf="@+id/with"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -182,17 +177,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
-        android:layout_marginBottom="5dp"
         android:text="/ 커뮤니티"
         android:textColor="#000000"
         android:textSize="19sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/accompany"
-        app:layout_constraintTop_toTopOf="@+id/include4"
-        app:layout_constraintVertical_bias="0.924"
+        app:layout_constraintTop_toTopOf="@+id/accompany"
         tools:ignore="MissingConstraints" />
 
     <View
@@ -200,24 +190,21 @@
         android:layout_width="400dp"
         android:layout_height="1dp"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:background="#8649494A"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.095"
+        app:layout_constraintTop_toBottomOf="@+id/accompany"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/box1"
         android:layout_width="354dp"
         android:layout_height="60dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/accompany_box"
         app:layout_constraintTop_toTopOf="@+id/accompany_box"
         app:srcCompat="@drawable/faint_gray_box" />
 
@@ -252,12 +239,13 @@
         android:id="@+id/a1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
         android:text="저번 주에 한 노틀담 드 파리 본... [38]"
         android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="normal"
-        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/box1"
         app:layout_constraintTop_toTopOf="@+id/box1" />
 
     <TextView
@@ -267,9 +255,9 @@
         android:layout_marginTop="8dp"
         android:text="오늘 XX연극 [03]"
         android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="normal"
-        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView75"
         app:layout_constraintTop_toTopOf="@+id/box2" />
 
     <TextView
@@ -279,9 +267,9 @@
         android:layout_marginTop="8dp"
         android:text="저번 주에 한 OO 뮤지컬 본사람? [10]"
         android:textColor="#000000"
-        android:textSize="18sp"
-        android:textStyle="normal"
-        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView76"
         app:layout_constraintTop_toTopOf="@+id/box3" />
 
     <TextView
@@ -291,17 +279,10 @@
         android:layout_marginTop="8dp"
         android:text="XXX공연 사진에 있는 이 배우 누구야? [24]"
         android:textColor="#000000"
-        android:textSize="18sp"
-        android:textStyle="normal"
-        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView77"
         app:layout_constraintTop_toTopOf="@+id/box4" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="40dp" />
 
     <TextView
         android:id="@+id/textView75"
@@ -309,7 +290,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="이번에 보러 가려고 하는데 어땠어?"
-        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintStart_toStartOf="@+id/a1"
         app:layout_constraintTop_toBottomOf="@+id/a1" />
 
     <TextView
@@ -318,7 +299,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="ㅁㅁㅁ배우 서는 거 맞지?"
-        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintStart_toStartOf="@+id/a2"
         app:layout_constraintTop_toBottomOf="@+id/a2" />
 
     <TextView
@@ -327,7 +308,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="거기 나온 어제 ooo배우 사인회 갔는데...."
-        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintStart_toStartOf="@+id/a3"
         app:layout_constraintTop_toBottomOf="@+id/a3" />
 
     <TextView
@@ -336,7 +317,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="진짜 너무 잘생겼는데 이름을 몰라..."
-        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintStart_toStartOf="@+id/a4"
         app:layout_constraintTop_toBottomOf="@+id/a4" />
 
 

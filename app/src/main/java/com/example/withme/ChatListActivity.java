@@ -20,7 +20,7 @@ public class ChatListActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ChatListActivity.this, MainActivity.class);
+                Intent intent = new Intent(ChatListActivity.this, accompanymainActivity.class);
                 startActivity(intent);
             }
         });
@@ -39,7 +39,7 @@ public class ChatListActivity extends AppCompatActivity {
         toolbar_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ChatListActivity.this,MainActivity.class);
+                Intent intent = new Intent(ChatListActivity.this,accompanymainActivity.class);
                 startActivity(intent);
             }
         });

@@ -17,16 +17,29 @@ public class accompanymainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accompanymain);
 
+
+        ImageView toolbar_home = findViewById(R.id.bar_home);
+        toolbar_home.setColorFilter(Color.parseColor("#00404040"));
+
         TextView ac_enter = (TextView) findViewById(R.id.ac_enter);
         ac_enter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(accompanymainActivity.this, Accompany.class);
+                startActivity(intent);
             }
         });
 
-        ImageView toolbar_home = findViewById(R.id.bar_home);
-        toolbar_home.setColorFilter(Color.parseColor("#00404040"));
+        TextView community = findViewById(R.id.community);
+        community.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(accompanymainActivity.this,Communitymain.class);
+                startActivity(intent);
+            }
+        });
+
+
 
         ImageView toolbar_category = findViewById(R.id.bar_category);
         toolbar_category.setOnClickListener(new View.OnClickListener() {

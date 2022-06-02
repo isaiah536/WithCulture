@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Withme">
         <activity
+            android:name=".Evaluation_preview"
+            android:exported="false"/>
+        <activity
+            android:name=".Communitymain"
+            android:exported="false"/>
+        <activity
             android:name=".accompanymainActivity"
             android:exported="false" />
         <activity

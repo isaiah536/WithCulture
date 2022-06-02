@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if(!(EmailInfo.equals("")||PasswordInfo.equals(""))){
                     if(userInfo.login(EmailInfo,PasswordInfo)){
-                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                        Intent intent = new Intent(LoginActivity.this, accompanymainActivity.class);
                         startActivity(intent);
                     }else{
                         Toast toast = Toast.makeText(getApplicationContext(),"가입정보가 일치하지 않습니다.",Toast.LENGTH_SHORT);
