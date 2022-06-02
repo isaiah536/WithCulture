@@ -27,8 +27,8 @@ public class Profile_preview extends AppCompatActivity {
         profileGender = findViewById(R.id.Preview_Gender);
 
         Display display = ((WindowManager) getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
-        int width = (int) (display.getWidth() * 0.9); //Display 사이즈의 90% 각자 원하는 사이즈로 설정하여 사용
-        int height = (int) (display.getHeight() * 0.7);  //Display 사이즈의 90% 각자 원하는 사이즈로 설정하여 사용
+        int width = (int) (display.getWidth() * 0.9);
+        int height = (int) (display.getHeight() * 0.7);
         getWindow().getAttributes().width = width;
         getWindow().getAttributes().height = height;
         back = findViewById(R.id.back6);
@@ -54,6 +54,17 @@ public class Profile_preview extends AppCompatActivity {
             profileAge.setText("21");
             profileGender.setText("남성");
         }
+
+
+
+        TextView Review = findViewById(R.id.Preview_Accompany);
+        Review.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Profile_preview.this,Evaluation_preview.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public boolean onTouchEvent(MotionEvent event){
